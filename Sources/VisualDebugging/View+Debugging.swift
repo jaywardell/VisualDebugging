@@ -45,7 +45,6 @@ public extension View {
             .background(color)
     }
 }
-#endif
 
 
 #Preview {
@@ -68,3 +67,5 @@ public extension View {
     .font(.largeTitle)
     .padding()
 }
+
+#endif
