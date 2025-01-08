@@ -12,7 +12,7 @@ public extension View {
     
     /// When you are trying to figure out SwiftUI layout,
     /// sometimes it helps to have some simple visual debugging.
-    /// This modifier will draw a colroed border around the view it modifies.
+    /// This modifier will draw a colored border around the view it modifies.
     /// - Parameter color: a SwiftUI color, pass in nil to get a randomly-generated color
     /// - Parameter lineWidth: the width of the border, 1 by default
     ///
