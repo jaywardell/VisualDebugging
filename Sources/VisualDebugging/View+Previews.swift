@@ -50,6 +50,7 @@ public extension View {
 
 }
 
+#if DEBUG
 #Preview("reasonably sized preview") {
     Color.orange
         .reasonablySizedPreview()
@@ -59,3 +60,4 @@ public extension View {
     Color.orange
         .narrowerPreview()
 }
+#endif
