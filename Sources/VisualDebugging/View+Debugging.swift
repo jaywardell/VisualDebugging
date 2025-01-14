@@ -18,7 +18,7 @@ public extension View {
     ///
     ///  NOTE: This method only compiles in DEBUG mode,
     ///  so if you are calling it in release code, it will give an error
-    func debuggingBorder(color: Color? = nil, lineWidth: CGFloat? = nil) -> some View {
+    func debuggingBorder(_ color: Color? = nil, lineWidth: CGFloat? = nil) -> some View {
         let color = color ?? Color(
             red: CGFloat.random(in: 0.2 ... 0.9),
             green: CGFloat.random(in: 0.2 ... 0.9),
@@ -35,7 +35,7 @@ public extension View {
     ///
     ///  NOTE: This method only compiles in DEBUG mode,
     ///  so if you are calling it in release code, it will give an error
-    func debuggingBackground(color: Color? = nil) -> some View {
+    func debuggingBackground(_ color: Color? = nil) -> some View {
         let color = color ?? Color(
             red: CGFloat.random(in: 0.2 ... 0.9),
             green: CGFloat.random(in: 0.2 ... 0.9),
@@ -53,7 +53,7 @@ public extension View {
             .debuggingBorder()
 
         Text("debuggingBorder with given color")
-            .debuggingBorder(color: .yellow)
+            .debuggingBorder(.yellow)
 
         Text("debuggingBorder with thick border")
             .debuggingBorder(lineWidth: 10)
@@ -62,7 +62,7 @@ public extension View {
             .debuggingBackground()
 
         Text("debuggingBackground with given color")
-            .debuggingBackground(color: .yellow)
+            .debuggingBackground(.yellow)
     }
     .font(.largeTitle)
     .padding()
